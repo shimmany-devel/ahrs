@@ -243,7 +243,7 @@ int init_uart(char * dev, int baud, int *fd)
     return 0;
 }
 
-void read_loop(void * arg)
+void* read_loop(void * arg)
 {
     int result;
     char buffer[MAX_BUF_SIZE];
